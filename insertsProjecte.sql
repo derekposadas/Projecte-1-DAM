@@ -103,50 +103,50 @@ INSERT INTO trajecte (nom, validat, mitjaTransport, usuariCreador) VALUES ('Metr
 PAUSE "Inserint parades..."
 
 -- R11 Barcelona Sants - Girona
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 1, t.ID, '07:05', e.ID FROM trajecte t, estacio e WHERE t.nom='R11 Barcelona Sants - Girona' AND e.nom='Barcelona Sants';
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 2, t.ID, '08:40', e.ID FROM trajecte t, estacio e WHERE t.nom='R11 Barcelona Sants - Girona' AND e.nom='Girona';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 1, t.ID, 'Barcelona Sants', '07:05', e.ID FROM trajecte t, estacio e WHERE t.nom='R11 Barcelona Sants - Girona' AND e.nom='Barcelona Sants';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 2, t.ID, 'Girona', '08:40', e.ID FROM trajecte t, estacio e WHERE t.nom='R11 Barcelona Sants - Girona' AND e.nom='Girona';
 
 -- R14 Barcelona França - Lleida (per Reus)
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 1, t.ID, '06:30', e.ID FROM trajecte t, estacio e WHERE t.nom='R14 Barcelona França - Lleida (per Reus)' AND e.nom='Barcelona Estació de França';
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 2, t.ID, '07:50', e.ID FROM trajecte t, estacio e WHERE t.nom='R14 Barcelona França - Lleida (per Reus)' AND e.nom='Tarragona';
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 3, t.ID, '08:10', e.ID FROM trajecte t, estacio e WHERE t.nom='R14 Barcelona França - Lleida (per Reus)' AND e.nom='Reus';
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 4, t.ID, '09:40', e.ID FROM trajecte t, estacio e WHERE t.nom='R14 Barcelona França - Lleida (per Reus)' AND e.nom='Lleida Pirineus';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 1, t.ID, 'Barcelona Estació de França', '06:30', e.ID FROM trajecte t, estacio e WHERE t.nom='R14 Barcelona França - Lleida (per Reus)' AND e.nom='Barcelona Estació de França';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 2, t.ID, 'Tarragona', '07:50', e.ID FROM trajecte t, estacio e WHERE t.nom='R14 Barcelona França - Lleida (per Reus)' AND e.nom='Tarragona';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 3, t.ID, 'Reus', '08:10', e.ID FROM trajecte t, estacio e WHERE t.nom='R14 Barcelona França - Lleida (per Reus)' AND e.nom='Reus';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 4, t.ID, 'Lleida Pirineus', '09:40', e.ID FROM trajecte t, estacio e WHERE t.nom='R14 Barcelona França - Lleida (per Reus)' AND e.nom='Lleida Pirineus';
 
 -- R4 Manresa - Barcelona Sants
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 1, t.ID, '05:54', e.ID FROM trajecte t, estacio e WHERE t.nom='R4 Manresa - Barcelona Sants' AND e.nom='Manresa';
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 2, t.ID, '06:38', e.ID FROM trajecte t, estacio e WHERE t.nom='R4 Manresa - Barcelona Sants' AND e.nom='Terrassa';
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 3, t.ID, '06:55', e.ID FROM trajecte t, estacio e WHERE t.nom='R4 Manresa - Barcelona Sants' AND e.nom='Sabadell Centre';
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 4, t.ID, '07:21', e.ID FROM trajecte t, estacio e WHERE t.nom='R4 Manresa - Barcelona Sants' AND e.nom='Barcelona Sants';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 1, t.ID, 'Manresa', '05:54', e.ID FROM trajecte t, estacio e WHERE t.nom='R4 Manresa - Barcelona Sants' AND e.nom='Manresa';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 2, t.ID, 'Terrassa', '06:38', e.ID FROM trajecte t, estacio e WHERE t.nom='R4 Manresa - Barcelona Sants' AND e.nom='Terrassa';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 3, t.ID, 'Sabadell Centre', '06:55', e.ID FROM trajecte t, estacio e WHERE t.nom='R4 Manresa - Barcelona Sants' AND e.nom='Sabadell Centre';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 4, t.ID, 'Barcelona Sants', '07:21', e.ID FROM trajecte t, estacio e WHERE t.nom='R4 Manresa - Barcelona Sants' AND e.nom='Barcelona Sants';
 
 -- FGC S1 Plaça Catalunya - Terrassa Rambla
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 1, t.ID, '08:00', e.ID FROM trajecte t, estacio e WHERE t.nom='FGC S1 Plaça Catalunya - Terrassa Rambla' AND e.nom='Barcelona Plaça Catalunya';
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 2, t.ID, '08:33', e.ID FROM trajecte t, estacio e WHERE t.nom='FGC S1 Plaça Catalunya - Terrassa Rambla' AND e.nom='Terrassa Rambla';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 1, t.ID, 'Barcelona Plaça Catalunya', '08:00', e.ID FROM trajecte t, estacio e WHERE t.nom='FGC S1 Plaça Catalunya - Terrassa Rambla' AND e.nom='Barcelona Plaça Catalunya';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 2, t.ID, 'Terrassa Rambla', '08:33', e.ID FROM trajecte t, estacio e WHERE t.nom='FGC S1 Plaça Catalunya - Terrassa Rambla' AND e.nom='Terrassa Rambla';
 
 -- R4 Terrassa - Sabadell
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 1, t.ID, '09:15', e.ID FROM trajecte t, estacio e WHERE t.nom='R4 Terrassa - Sabadell' AND e.nom='Terrassa';
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 2, t.ID, '09:25', e.ID FROM trajecte t, estacio e WHERE t.nom='R4 Terrassa - Sabadell' AND e.nom='Sabadell Nord';
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 3, t.ID, '09:30', e.ID FROM trajecte t, estacio e WHERE t.nom='R4 Terrassa - Sabadell' AND e.nom='Sabadell Centre';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 1, t.ID, 'Terrassa', '09:15', e.ID FROM trajecte t, estacio e WHERE t.nom='R4 Terrassa - Sabadell' AND e.nom='Terrassa';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 2, t.ID, 'Sabadell Nord', '09:25', e.ID FROM trajecte t, estacio e WHERE t.nom='R4 Terrassa - Sabadell' AND e.nom='Sabadell Nord';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 3, t.ID, 'Sabadell Centre', '09:30', e.ID FROM trajecte t, estacio e WHERE t.nom='R4 Terrassa - Sabadell' AND e.nom='Sabadell Centre';
 
 -- R3 Barcelona Plaça Catalunya - Vic
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 1, t.ID, '07:00', e.ID FROM trajecte t, estacio e WHERE t.nom='R3 Barcelona Plaça Catalunya - Vic' AND e.nom='Barcelona Plaça Catalunya';
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 2, t.ID, '08:15', e.ID FROM trajecte t, estacio e WHERE t.nom='R3 Barcelona Plaça Catalunya - Vic' AND e.nom='Vic';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 1, t.ID, 'Barcelona Plaça Catalunya', '07:00', e.ID FROM trajecte t, estacio e WHERE t.nom='R3 Barcelona Plaça Catalunya - Vic' AND e.nom='Barcelona Plaça Catalunya';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 2, t.ID, 'Vic', '08:15', e.ID FROM trajecte t, estacio e WHERE t.nom='R3 Barcelona Plaça Catalunya - Vic' AND e.nom='Vic';
 
 -- FGC R6 Plaça Espanya - Igualada
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 1, t.ID, '08:00', e.ID FROM trajecte t, estacio e WHERE t.nom='FGC R6 Plaça Espanya - Igualada' AND e.nom='Barcelona Plaça Espanya';
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 2, t.ID, '09:05', e.ID FROM trajecte t, estacio e WHERE t.nom='FGC R6 Plaça Espanya - Igualada' AND e.nom='Igualada';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 1, t.ID, 'Barcelona Plaça Espanya', '08:00', e.ID FROM trajecte t, estacio e WHERE t.nom='FGC R6 Plaça Espanya - Igualada' AND e.nom='Barcelona Plaça Espanya';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 2, t.ID, 'Igualada', '09:05', e.ID FROM trajecte t, estacio e WHERE t.nom='FGC R6 Plaça Espanya - Igualada' AND e.nom='Igualada';
 
 -- AVE Barcelona Sants - Lleida Pirineus (via Camp de Tarragona)
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 1, t.ID, '07:00', e.ID FROM trajecte t, estacio e WHERE t.nom='AVE Barcelona Sants - Lleida Pirineus' AND e.nom='Barcelona Sants';
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 2, t.ID, '07:32', e.ID FROM trajecte t, estacio e WHERE t.nom='AVE Barcelona Sants - Lleida Pirineus' AND e.nom='Camp de Tarragona';
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 3, t.ID, '07:58', e.ID FROM trajecte t, estacio e WHERE t.nom='AVE Barcelona Sants - Lleida Pirineus' AND e.nom='Lleida Pirineus';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 1, t.ID, 'Barcelona Sants', '07:00', e.ID FROM trajecte t, estacio e WHERE t.nom='AVE Barcelona Sants - Lleida Pirineus' AND e.nom='Barcelona Sants';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 2, t.ID, 'Camp de Tarragona', '07:32', e.ID FROM trajecte t, estacio e WHERE t.nom='AVE Barcelona Sants - Lleida Pirineus' AND e.nom='Camp de Tarragona';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 3, t.ID, 'Lleida Pirineus', '07:58', e.ID FROM trajecte t, estacio e WHERE t.nom='AVE Barcelona Sants - Lleida Pirineus' AND e.nom='Lleida Pirineus';
 
 -- Avant Barcelona Sants - Girona
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 1, t.ID, '08:30', e.ID FROM trajecte t, estacio e WHERE t.nom='Avant Barcelona Sants - Girona' AND e.nom='Barcelona Sants';
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 2, t.ID, '09:08', e.ID FROM trajecte t, estacio e WHERE t.nom='Avant Barcelona Sants - Girona' AND e.nom='Girona';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 1, t.ID, 'Barcelona Sants', '08:30', e.ID FROM trajecte t, estacio e WHERE t.nom='Avant Barcelona Sants - Girona' AND e.nom='Barcelona Sants';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 2, t.ID, 'Girona', '09:08', e.ID FROM trajecte t, estacio e WHERE t.nom='Avant Barcelona Sants - Girona' AND e.nom='Girona';
 
 -- Metro L3 Sants - Passeig de Gràcia
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 1, t.ID, '09:00', e.ID FROM trajecte t, estacio e WHERE t.nom='Metro L3 Sants - Passeig de Gràcia' AND e.nom='Barcelona Sants';
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 2, t.ID, '09:13', e.ID FROM trajecte t, estacio e WHERE t.nom='Metro L3 Sants - Passeig de Gràcia' AND e.nom='Barcelona Plaça Catalunya';
-INSERT INTO parada (ordre, idTrajecte, horaPas, idEstacio) SELECT 3, t.ID, '09:15', e.ID FROM trajecte t, estacio e WHERE t.nom='Metro L3 Sants - Passeig de Gràcia' AND e.nom='Barcelona Passeig de Gràcia';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 1, t.ID, 'Barcelona Sants', '09:00', e.ID FROM trajecte t, estacio e WHERE t.nom='Metro L3 Sants - Passeig de Gràcia' AND e.nom='Barcelona Sants';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 2, t.ID, 'Barcelona Plaça Catalunya', '09:13', e.ID FROM trajecte t, estacio e WHERE t.nom='Metro L3 Sants - Passeig de Gràcia' AND e.nom='Barcelona Plaça Catalunya';
+INSERT INTO parada (ordre, idTrajecte, nom, horaPas, idEstacio) SELECT 3, t.ID, 'Barcelona Passeig de Gràcia', '09:15', e.ID FROM trajecte t, estacio e WHERE t.nom='Metro L3 Sants - Passeig de Gràcia' AND e.nom='Barcelona Passeig de Gràcia';
 
 COMMIT;

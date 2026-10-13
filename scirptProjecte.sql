@@ -76,10 +76,11 @@ DROP TABLE parada CASCADE CONSTRAINTS;
 CREATE TABLE parada (
 	ordre		NUMBER,
 	idTrajecte	NUMBER CONSTRAINT nn_parada_trajecte NOT NULL,
+    nom         VARCHAR2(100 CHAR),
 	horaPas	    VARCHAR2(5 CHAR) CONSTRAINT nn_parada_horaPas NOT NULL,
 	idEstacio	NUMBER CONSTRAINT nn_parada_estacio NOT NULL,
 
-	CONSTRAINT pk_parada PRIMARY KEY(ordre, idTrajecte),
+	CONSTRAINT pk_parada PRIMARY KEY(idTrajecte, ordre),
 	CONSTRAINT fk_parada_trajecte FOREIGN KEY(idTrajecte) REFERENCES trajecte(ID),
 	CONSTRAINT fk_parada_estacio FOREIGN KEY(idEstacio) REFERENCES estacio(ID),
 	CONSTRAINT ck_parada_horapas CHECK (REGEXP_LIKE(horaPas, '^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$'))
