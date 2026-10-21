@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Aplicacio" GeneratedClassName="propietatsOracle">
+  <Profiles />
+  <Settings>
+    <Setting Name="url" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://10.2.51.67:1521/XEPDB1</Value>
+    </Setting>
+    <Setting Name="usr" Type="System.String" Scope="User">
+      <Value Profile="(Default)">alumne</Value>
+    </Setting>
+    <Setting Name="pwd" Type="System.String" Scope="User">
+      <Value Profile="(Default)">alumne</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
