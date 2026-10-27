@@ -9,11 +9,10 @@ namespace IDAO
     public interface IDAOUsuari
     {
         public ObservableCollection<Usuari> GetUsuaris();
-        public ObservableCollection<Usuari> GetUsuarisByNom(string nom);
-        public bool usuariActiu(string email, string password);
-        public void insereixUsuari(Usuari user);
+        public ObservableCollection<Usuari> GetUsuarisByNom(string nom_filtre, int offset = 0, int rows_per_page = -1);
+        public bool existeixUsuari(Usuari user);
+        public bool insereixUsuari(Usuari user);
         public void bloquejaUsuari(Usuari user);
         public void desbloquejaUsuari(Usuari user);
-        public bool validaContrasenya(string password);
     }
 }

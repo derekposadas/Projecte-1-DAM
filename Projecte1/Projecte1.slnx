@@ -3,4 +3,5 @@
   <Project Path="DAO/DAO.csproj" />
   <Project Path="IDAO/IDAO.csproj" />
   <Project Path="Model/Model.csproj" />
+  <Project Path="TestProject/TestProject.csproj" Id="b032d792-93ad-43e0-895d-fb17f7515846" />
 </Solution>

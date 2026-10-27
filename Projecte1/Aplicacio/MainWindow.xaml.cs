@@ -24,6 +24,9 @@ namespace Aplicacio
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             string url, usr, pwd;
+            url = propietatsOracle.Default.url;
+            usr = propietatsOracle.Default.usr;
+            pwd = propietatsOracle.Default.pwd;
             
         }
     }

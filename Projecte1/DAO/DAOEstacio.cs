@@ -18,7 +18,7 @@ namespace DAO
             _connexio = connexio;
         }
 
-        public bool existeixEstacio(Estacio estacio)
+        public bool existeixEstacio(Estacio estacio, int offset = 0, int rows_per_page = -1)
         {
             bool existeix = false;
 
@@ -33,11 +33,16 @@ namespace DAO
             {
                 consulta.CommandText =
                     @"select 1 from estacio e
-                        inner join ciutat c on c.id = e.idCiutat
+                        inner join ciutat c on c.id = e.IDCiutat
                                 where
-                                ( @ID_TEXT=-1 OR e.id = @ID_TEXT ) AND
-                                ( @NOM_TEXT='%%' OR e.nom = @NOM_TEXT ) AND
-                                ( @ID_C_TEXT=-1 OR c.id = @ID_C_TEXT )";
+                                ( e.id = :ID_TEXT ) AND
+                                ( e.nom = :NOM_TEXT ) AND
+                                ( c.id = :ID_C_TEXT )";
+
+                if (rows_per_page > 0)
+                {
+                    consulta.CommandText += $" OFFSET {offset} ROWS FETCH NEXT {rows_per_page} ROWS ONLY";
+                }
 
                 Utils.CrearParametre(consulta, estacio.Id, "ID_TEXT", System.Data.DbType.Int32);
                 Utils.CrearParametre(consulta, estacio.Nom, "NOM_TEXT", System.Data.DbType.String);
@@ -45,53 +50,21 @@ namespace DAO
 
                 consulta.Transaction = _connexio.Database.CurrentTransaction?.GetDbTransaction();
 
-                var reader = consulta.ExecuteReader();
-                if (reader.Read()) existeix = true;
-
+                using (var reader = consulta.ExecuteReader())
+                {
+                    if (reader.Read()) existeix = true;
+                }
+                
                 return existeix;
             }
         }
 
         public ObservableCollection<Estacio> GetEstacions()
         {
-            ObservableCollection<Estacio> estacions = new ObservableCollection<Estacio>();
-
-            var connexio = _connexio.Database.GetDbConnection();
-
-            if (connexio.State == System.Data.ConnectionState.Closed)
-            {
-                connexio.Open();
-            }
-
-            using (var consulta = connexio.CreateCommand())
-            {
-                consulta.CommandText =
-                    @"select e.ID as idEstacio, e.nom as nomEstacio, e.latitud, e.longitud, c.id as idCiutat, c.nom as nomCiutat from estacio e
-                        inner join ciutat c on e.IDCiutat = c.ID";
-
-                consulta.Transaction = _connexio.Database.CurrentTransaction?.GetDbTransaction();
-
-                using (var reader = consulta.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        int id = reader.GetInt32(reader.GetOrdinal("idEstacio"));
-                        string nom = reader.GetString(reader.GetOrdinal("nomEstacio"));
-                        double latitud = reader.GetDouble(reader.GetOrdinal("latitud"));
-                        double longitud = reader.GetDouble(reader.GetOrdinal("longitud"));
-                        int idC = reader.GetInt32(reader.GetOrdinal("idCiutat"));
-                        string nomC = reader.GetString(reader.GetOrdinal("nomCiutat"));
-
-                        Ciutat c = new Ciutat(idC, nomC);
-                        Estacio e = new Estacio(id, c, nom, latitud, longitud);
-                        estacions.Add(e);
-                    }
-                }
-            }
-            return estacions;
+            return GetEstacionsByNom("");
         }
 
-        public ObservableCollection<Estacio> GetEstacionsByNom(string nom_filtre)
+        public ObservableCollection<Estacio> GetEstacionsByNom(string nom_filtre, int offset = 0, int rows_per_page = -1)
         {
             ObservableCollection<Estacio> estacions = new ObservableCollection<Estacio>();
 
@@ -108,7 +81,12 @@ namespace DAO
                     @"select e.ID as idEstacio, e.nom as nomEstacio, e.latitud, e.longitud, c.id as idCiutat, c.nom as nomCiutat from estacio e
                         inner join ciutat c on e.IDCiutat = c.ID
                             where
-                            ( @NOM_TEXT='%%' OR nom = @NOM_TEXT )";
+                            ( nom = :NOM_TEXT )";
+
+                if (rows_per_page > 0)
+                {
+                    consulta.CommandText += $" OFFSET {offset} ROWS FETCH NEXT {rows_per_page} ROWS ONLY";
+                }
 
                 Utils.CrearParametre(consulta, "%" + nom_filtre + "%", "NOM_TEXT", System.Data.DbType.String);
 
@@ -151,28 +129,16 @@ namespace DAO
             using (var consulta = connexio.CreateCommand())
             {
                 consulta.CommandText =
-                    @"insert into estacio (";
+                    @"insert into estacio (ID, IDCiutat, nom, latitud, longitud)
+                        values (:ID_TEXT, :IDC_TEXT, :NOM_TEXT, :LATITUD_TEXT, :LONGITUD_TEXT)";
 
-                Utils.CrearParametre(consulta, "%" + nom_filtre + "%", "NOM_TEXT", System.Data.DbType.String);
+                Utils.CrearParametre(consulta, estacio.Id, "ID_TEXT", System.Data.DbType.Int32);
+                Utils.CrearParametre(consulta, estacio.Ciutat.Id, "IDC_TEXT", System.Data.DbType.Int32);
+                Utils.CrearParametre(consulta, estacio.Nom, "NOM_TEXT", System.Data.DbType.String);
+                Utils.CrearParametre(consulta, estacio.Latitud, "LATITUD_TEXT", System.Data.DbType.Double);
+                Utils.CrearParametre(consulta, estacio.Longitud, "LONGITUD_TEXT", System.Data.DbType.Double);
 
-                consulta.Transaction = _connexio.Database.CurrentTransaction?.GetDbTransaction();
-
-                using (var reader = consulta.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        int id = reader.GetInt32(reader.GetOrdinal("idEstacio"));
-                        string nom = reader.GetString(reader.GetOrdinal("nomEstacio"));
-                        double latitud = reader.GetDouble(reader.GetOrdinal("latitud"));
-                        double longitud = reader.GetDouble(reader.GetOrdinal("longitud"));
-                        int idC = reader.GetInt32(reader.GetOrdinal("idCiutat"));
-                        string nomC = reader.GetString(reader.GetOrdinal("nomCiutat"));
-
-                        Ciutat c = new Ciutat(idC, nomC);
-                        Estacio e = new Estacio(id, c, nom, latitud, longitud);
-                        estacions.Add(e);
-                    }
-                }
+                consulta.ExecuteNonQuery();
             }
         }
     }

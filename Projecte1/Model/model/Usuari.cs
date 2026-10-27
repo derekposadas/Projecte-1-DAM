@@ -26,15 +26,6 @@ namespace Model.model
             Tipus = tipus;
             DataRegistre = dataRegistre;
         }
-        public Usuari(int id, string email, string password, TipusUsuari tipus, DateTime dataRegistre)
-        {
-            Id = id;
-            Email = email;
-            Nom = null;
-            Password = password;
-            Tipus = tipus;
-            DataRegistre = dataRegistre;
-        }
 
         public int Id { get => id; set => id = value; }
         public string Email { get => email; set => email = value; }
