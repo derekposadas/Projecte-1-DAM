@@ -15,6 +15,16 @@ namespace Model.model
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
+        // Constructor per estacions noves
+        public Estacio(Ciutat ciutat, string nom, double latitud, double longitud)
+        {
+            Ciutat = ciutat;
+            Nom = nom;
+            Latitud = latitud;
+            Longitud = longitud;
+        }
+
+        // Constructor per ciutats de la BD
         public Estacio(int id, Ciutat ciutat, string nom, double latitud, double longitud)
         {
             Id = id;
@@ -24,12 +34,13 @@ namespace Model.model
             Longitud = longitud;
         }
 
-        public int Id { get => id; set => id = value; }
+        #region propietats
+        public int Id { get => id; private set => id = value; }
         public Ciutat Ciutat { get => ciutat; set => ciutat = value; }
         public string Nom { get => nom; set => nom = value; }
         public double Latitud { get => latitud; set => latitud = value; }
         public double Longitud { get => longitud; set => longitud = value; }
-
+        #endregion
 
         public override bool Equals(object? obj)
         {

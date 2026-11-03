@@ -34,7 +34,7 @@ namespace DAO
                         nom = :NOM_TEXT,
                         validat = :VALIDAT_TEXT,
                         mitjaTransport = :MITJATRANSPORT_TEXT
-                            where ID = :ID_TEXT";
+                            where id = :ID_TEXT";
 
                 Utils.CrearParametre(consulta, trajecte.Nom, "NOM_TEXT", System.Data.DbType.String);
                 if (trajecte.Validat == true)
@@ -111,8 +111,8 @@ namespace DAO
                             ON eDesti.id = pDesti.idEstacio
                         JOIN ciutat cDesti
                             ON cDesti.id = eDesti.idCiutat
-                        WHERE (cOrigen.nom LIKE :ORIGEN_TEXT OR :ORIGEN_TEXT = '%')
-                        AND (cDesti.nom LIKE :DESTI_TEXT OR :DESTI_TEXT = '%')
+                        WHERE ((cOrigen.nom) LIKE :ORIGEN_TEXT OR :ORIGEN_TEXT = '%')
+                        AND (upper(cDesti.nom) LIKE :DESTI_TEXT OR :DESTI_TEXT = '%')
                         AND pOrigen.horaPas = :HORAPAS_TEXT
                         AND pOrigen.ordre < pDesti.ordre";
 
@@ -121,8 +121,8 @@ namespace DAO
                     consulta.CommandText += $" OFFSET {offset} ROWS FETCH NEXT {rows_per_page} ROWS ONLY";
                 }
 
-                string ciutatOrigen = origen == null ? "%"  : "%" + origen.Nom + "%";
-                string ciutatDesti = desti == null ? "%" : "%" + desti.Nom + "%";
+                string ciutatOrigen = origen == null ? "%"  : "%" + origen.Nom.ToUpper() + "%";
+                string ciutatDesti = desti == null ? "%" : "%" + desti.Nom.ToUpper() + "%";
 
                 Utils.CrearParametre(consulta, ciutatOrigen, "ORIGEN_TEXT", System.Data.DbType.String);
                 Utils.CrearParametre(consulta, ciutatDesti, "DESTI_TEXT", System.Data.DbType.String);
@@ -134,7 +134,7 @@ namespace DAO
                 {
                     while (reader.Read())
                     {
-                        int id = reader.GetInt32(reader.GetOrdinal("ID"));
+                        int id = reader.GetInt32(reader.GetOrdinal("id"));
 
                         string nom = reader.GetString(reader.GetOrdinal("nom"));
 
@@ -230,7 +230,7 @@ namespace DAO
                 {
                     while (reader.Read())
                     {
-                        int id = reader.GetInt32(reader.GetOrdinal("ID"));
+                        int id = reader.GetInt32(reader.GetOrdinal("id"));
                         string nom = reader.GetString(reader.GetOrdinal("nom"));
                         DateTime dataCreacio = reader.GetDateTime(reader.GetOrdinal("dataCreacio"));
                         int ivalidat = reader.GetInt32(reader.GetOrdinal("validat"));
@@ -262,10 +262,9 @@ namespace DAO
             using (var consulta = connexio.CreateCommand())
             {
                 consulta.CommandText =
-                    @"insert into trajecte (ID, nom, dataCreacio, validat, mitjaTransport, usuariCreador)
-                        values (:ID_TEXT, :NOM_TEXT, :DATACREACIO_TEXT, :VALIDAT_TEXT, :MITJATRANSPORT_TEXT, :USUARI_TEXT)";
+                    @"insert into trajecte (nom, dataCreacio, validat, mitjaTransport, usuariCreador)
+                        values (:NOM_TEXT, :DATACREACIO_TEXT, :VALIDAT_TEXT, :MITJATRANSPORT_TEXT, :USUARI_TEXT)";
 
-                Utils.CrearParametre(consulta, trajecte.Id, "ID_TEXT", System.Data.DbType.Int32);
                 Utils.CrearParametre(consulta, trajecte.Nom, "NOM_TEXT", System.Data.DbType.String);
                 Utils.CrearParametre(consulta, trajecte.DataCreacio, "NOM_TEXT", System.Data.DbType.DateTime);
                 if (trajecte.Validat == true) 

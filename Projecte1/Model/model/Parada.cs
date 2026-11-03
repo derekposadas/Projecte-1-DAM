@@ -16,6 +16,16 @@ namespace Model.model
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
+        // Constructor per parades noves
+        public Parada(Trajecte trajecte, string nom, string horaPas, Estacio estacio)
+        {
+            Trajecte = trajecte;
+            Nom = nom;
+            HoraPas = horaPas;
+            Estacio = estacio;
+        }
+
+        // Constructor per parades de la BD
         public Parada(int ordre, Trajecte trajecte, string nom, string horaPas, Estacio estacio)
         {
             Ordre = ordre;
@@ -27,8 +37,8 @@ namespace Model.model
 
         #region propietats
 
-        public int Ordre { get => ordre; set => ordre = value; }
-        public Trajecte Trajecte { get => trajecte; set => trajecte = value; }
+        public int Ordre { get => ordre; private set => ordre = value; }
+        public Trajecte Trajecte { get => trajecte; private set => trajecte = value; }
         public string Nom { get => nom; set => nom = value; }
         public string HoraPas { get => horaPas; 
             set 

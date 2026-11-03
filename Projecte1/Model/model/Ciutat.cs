@@ -10,14 +10,17 @@ namespace Model.model
         private int id;
         private string nom;
 
+        // Constructor per ciutats de la BD
         public Ciutat(int id, string nom)
         {
             Id = id;
             Nom = nom;
         }
 
-        public int Id { get => id; set => id = value; }
+        #region propietats
+        public int Id { get => id; private set => id = value; }
         public string Nom { get => nom; set => nom = value; }
+        #endregion
 
         public override bool Equals(object? obj)
         {

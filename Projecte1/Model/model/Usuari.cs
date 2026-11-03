@@ -17,6 +17,17 @@ namespace Model.model
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
+        // Constructor per usuaris nous
+        public Usuari(string email, string nom, string password, TipusUsuari tipus, DateTime dataRegistre)
+        {
+            Email = email;
+            Nom = nom;
+            Password = password;
+            Tipus = tipus;
+            DataRegistre = dataRegistre;
+        }
+
+        // Constructor per usuaris de la BD
         public Usuari(int id, string email, string nom, string password, TipusUsuari tipus, DateTime dataRegistre)
         {
             Id = id;
@@ -27,12 +38,14 @@ namespace Model.model
             DataRegistre = dataRegistre;
         }
 
-        public int Id { get => id; set => id = value; }
+        #region propietats
+        public int Id { get => id; private set => id = value; }
         public string Email { get => email; set => email = value; }
         public string Nom { get => nom; set => nom = value; }
         public string Password { get => password; set => password = value; }
         public TipusUsuari Tipus { get => tipus; set => tipus = value; }
-        public DateTime DataRegistre { get => dataRegistre; set => dataRegistre = value; }
+        public DateTime DataRegistre { get => dataRegistre; private set => dataRegistre = value; }
+        #endregion
 
         public override string ToString()
         {

@@ -1,0 +1,15 @@
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\Model\bin\Debug\net10.0\Model.deps.json
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\Model\bin\Debug\net10.0\Model.dll
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\Model\bin\Debug\net10.0\Model.pdb
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\Model\obj\Debug\net10.0\Model.csproj.AssemblyReference.cache
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\Model\obj\Debug\net10.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\Model\obj\Debug\net10.0\Model.AssemblyInfoInputs.cache
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\Model\obj\Debug\net10.0\Model.AssemblyInfo.cs
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\Model\obj\Debug\net10.0\Model.csproj.CoreCompileInputs.cache
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\Model\obj\Debug\net10.0\Model.sourcelink.json
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\Model\obj\Debug\net10.0\Model.csproj.Fody.CopyLocal.cache
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\Model\obj\Debug\net10.0\Model.csproj.Fody.RuntimeCopyLocal.cache
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\Model\obj\Debug\net10.0\Model.dll
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\Model\obj\Debug\net10.0\refint\Model.dll
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\Model\obj\Debug\net10.0\Model.pdb
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\Model\obj\Debug\net10.0\ref\Model.dll

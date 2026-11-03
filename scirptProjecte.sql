@@ -3,10 +3,10 @@
 DROP TABLE ciutat CASCADE CONSTRAINTS;
 
 CREATE TABLE ciutat (
-	ID	NUMBER GENERATED ALWAYS AS IDENTITY,
+	id	NUMBER GENERATED ALWAYS AS IDENTITY,
 	nom	VARCHAR2(100 CHAR) CONSTRAINT nn_ciutat_nom NOT NULL,
 
-	CONSTRAINT pk_ciutat PRIMARY KEY(ID)
+	CONSTRAINT pk_ciutat PRIMARY KEY(id)
 );
 
 PAUSE "Taula ciutat creada..."
@@ -14,14 +14,14 @@ PAUSE "Taula ciutat creada..."
 DROP TABLE estacio CASCADE CONSTRAINTS;
 
 CREATE TABLE estacio (
-	ID		    NUMBER GENERATED ALWAYS AS IDENTITY,
-	IDCiutat	NUMBER CONSTRAINT nn_estacio_ciutat NOT NULL,
+	id		    NUMBER GENERATED ALWAYS AS IDENTITY,
+	idCiutat	NUMBER CONSTRAINT nn_estacio_ciutat NOT NULL,
 	nom         VARCHAR2(100 CHAR) CONSTRAINT nn_estacio_nom NOT NULL,
 	latitud		NUMBER(8,5) CONSTRAINT nn_estacio_latitud NOT NULL,
 	longitud	NUMBER(8,5) CONSTRAINT nn_estacio_longitud NOT NULL,
 
-	CONSTRAINT pk_estacio PRIMARY KEY(ID),
-	CONSTRAINT fk_estacio_ciutat FOREIGN KEY(IDCiutat) REFERENCES ciutat(ID)
+	CONSTRAINT pk_estacio PRIMARY KEY(id),
+	CONSTRAINT fk_estacio_ciutat FOREIGN KEY(idCiutat) REFERENCES ciutat(id)
 );
 
 PAUSE "Taula estació creada..."
@@ -29,10 +29,10 @@ PAUSE "Taula estació creada..."
 DROP TABLE mitja_transport CASCADE CONSTRAINTS;
 
 CREATE TABLE mitja_transport (
-	ID	NUMBER GENERATED ALWAYS AS IDENTITY,
+	id	NUMBER GENERATED ALWAYS AS IDENTITY,
 	nom	VARCHAR2(100 CHAR) CONSTRAINT nn_transport_nom NOT NULL,
 
-	CONSTRAINT pk_transport PRIMARY KEY(ID)
+	CONSTRAINT pk_transport PRIMARY KEY(id)
 );
 
 PAUSE "Taula mitja_transport creada..."
@@ -40,14 +40,14 @@ PAUSE "Taula mitja_transport creada..."
 DROP TABLE usuari CASCADE CONSTRAINTS;
 
 CREATE TABLE usuari (
-	ID		        NUMBER GENERATED ALWAYS AS IDENTITY,
+	id		        NUMBER GENERATED ALWAYS AS IDENTITY,
 	email		    VARCHAR2(100 CHAR) CONSTRAINT nn_usuari_email NOT NULL,
 	nom		        VARCHAR2(100 CHAR),
 	password	    VARCHAR2(100 CHAR) CONSTRAINT nn_usuari_password NOT NULL,
 	tipus		    CHAR(1) CONSTRAINT nn_usuari_tipus NOT NULL,
 	dataRegistre	DATE DEFAULT SYSDATE CONSTRAINT nn_usuari_data NOT NULL,
 
-	CONSTRAINT pk_usuari PRIMARY KEY(ID),
+	CONSTRAINT pk_usuari PRIMARY KEY(id),
 	CONSTRAINT ck_usuari_tipus CHECK (tipus IN ('A', 'E', 'B'))
 );
 
@@ -56,16 +56,16 @@ PAUSE "Taula usuari creada..."
 DROP TABLE trajecte CASCADE CONSTRAINTS;
 
 CREATE TABLE trajecte (
-	ID		        NUMBER GENERATED ALWAYS AS IDENTITY,
+	id		        NUMBER GENERATED ALWAYS AS IDENTITY,
 	nom		        VARCHAR2(100 CHAR) CONSTRAINT nn_trajecte_nom NOT NULL,
 	dataCreacio	    TIMESTAMP DEFAULT SYSDATE CONSTRAINT nn_trajecte_creacio NOT NULL,
 	validat		    NUMBER(1) DEFAULT 0 CONSTRAINT nn_trajecte_validat NOT NULL,
 	mitjaTransport	NUMBER CONSTRAINT nn_trajecte_transport NOT NULL,
 	usuariCreador	NUMBER CONSTRAINT nn_trajecte_usuari NOT NULL,
 
-	CONSTRAINT pk_trajecte PRIMARY KEY (ID),
-	CONSTRAINT fk_trajecte_transport FOREIGN KEY (mitjaTransport) REFERENCES mitja_transport(ID),
-	CONSTRAINT fk_trajecte_usuari FOREIGN KEY (usuariCreador) REFERENCES usuari(ID),
+	CONSTRAINT pk_trajecte PRIMARY KEY (id),
+	CONSTRAINT fk_trajecte_transport FOREIGN KEY (mitjaTransport) REFERENCES mitja_transport(id),
+	CONSTRAINT fk_trajecte_usuari FOREIGN KEY (usuariCreador) REFERENCES usuari(id),
     CONSTRAINT ck_trajecte_validat CHECK (validat IN (0,1))
 );
 
@@ -81,8 +81,8 @@ CREATE TABLE parada (
 	idEstacio	NUMBER CONSTRAINT nn_parada_estacio NOT NULL,
 
 	CONSTRAINT pk_parada PRIMARY KEY(idTrajecte, ordre),
-	CONSTRAINT fk_parada_trajecte FOREIGN KEY(idTrajecte) REFERENCES trajecte(ID),
-	CONSTRAINT fk_parada_estacio FOREIGN KEY(idEstacio) REFERENCES estacio(ID),
+	CONSTRAINT fk_parada_trajecte FOREIGN KEY(idTrajecte) REFERENCES trajecte(id),
+	CONSTRAINT fk_parada_estacio FOREIGN KEY(idEstacio) REFERENCES estacio(id),
 	CONSTRAINT ck_parada_horapas CHECK (REGEXP_LIKE(horaPas, '^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$'))
 );
 

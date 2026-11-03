@@ -1,5 +1,6 @@
 ﻿using IDAO;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query.Internal;
 using Microsoft.EntityFrameworkCore.Storage;
 using Model.model;
 using System;
@@ -18,7 +19,7 @@ namespace DAO
             _connexio = connexio;
         }
 
-        public void editarParada(Parada parada)
+        public void editarParada(Parada parada, int nouOrdre)
         {
             var connexio = _connexio.Database.GetDbConnection();
 
@@ -27,29 +28,82 @@ namespace DAO
                 connexio.Open();
             }
 
+            // Recuperem totes les parades del trajecte
+            ObservableCollection<Parada> parades =
+                GetParades(parada.Trajecte.Id);
+
+            // Comprovem que existeixi una parada a l'ordre de destinació
+            Parada? paradaIntercanvi = parades.FirstOrDefault(
+                p => p.Ordre == nouOrdre
+            );
+
+            if (paradaIntercanvi == null)
+            {
+                throw new InvalidOperationException(
+                    "No es pot moure la parada perquè no hi ha cap parada a la posició de destinació."
+                );
+            }
+
+            int ordreOriginal = parada.Ordre;
+            int ordreTemporal = parades.Max(p => p.Ordre) + 1;
+
             using (var consulta = connexio.CreateCommand())
             {
+                consulta.Transaction =
+                    _connexio.Database.CurrentTransaction?.GetDbTransaction();
+
+                // 1. Movem temporalment la parada seleccionada
                 consulta.CommandText =
-                    @"select nom from mitja_transport";
+                    @"UPDATE parada
+                      SET ordre = :ORDRE_TEMPORAL
+                      WHERE ordre = :ORDRE_ORIGINAL
+                        AND idTrajecte = :IDTRAJECTE_TEXT";
 
-                consulta.Transaction = _connexio.Database.CurrentTransaction?.GetDbTransaction();
+                Utils.CrearParametre(consulta, ordreTemporal, "ORDRE_TEMPORAL", System.Data.DbType.Int32);
+                Utils.CrearParametre(consulta, ordreOriginal, "ORDRE_ORIGINAL", System.Data.DbType.Int32);
+                Utils.CrearParametre(consulta, parada.Trajecte.Id, "IDTRAJECTE_TEXT", System.Data.DbType.Int32);
 
-                using (var reader = consulta.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        int id = reader.GetInt32(reader.GetOrdinal("ID"));
-                        string nom = reader.GetString(reader.GetOrdinal("nom"));
+                consulta.ExecuteNonQuery();
 
-                        MitjaTransport mt = new MitjaTransport(id, nom);
-                        mitjansTransport.Add(mt);
-                    }
-                }
+                // 2. Posem la parada veïna a l'ordre original
+                consulta.Parameters.Clear();
+
+                consulta.CommandText =
+                    @"UPDATE parada
+                      SET ordre = :ORDRE_ORIGINAL
+                      WHERE ordre = :ORDRE_DESTI
+                        AND idTrajecte = :IDTRAJECTE_TEXT";
+
+                Utils.CrearParametre(consulta, ordreOriginal, "ORDRE_ORIGINAL", System.Data.DbType.Int32);
+                Utils.CrearParametre(consulta, nouOrdre, "ORDRE_DESTI", System.Data.DbType.Int32);
+                Utils.CrearParametre(consulta, parada.Trajecte.Id, "IDTRAJECTE_TEXT", System.Data.DbType.Int32);
+
+                consulta.ExecuteNonQuery();
+
+                // 3. Posem la parada seleccionada al nou ordre
+                consulta.Parameters.Clear();
+
+                consulta.CommandText =
+                    @"UPDATE parada
+                      SET ordre = :ORDRE_DESTI,
+                          nom = :NOM_TEXT,
+                          horaPas = :HORAPAS_TEXT,
+                          idEstacio = :ESTACIO_TEXT
+                      WHERE ordre = :ORDRE_TEMPORAL
+                        AND idTrajecte = :IDTRAJECTE_TEXT";
+
+                Utils.CrearParametre(consulta, nouOrdre, "ORDRE_DESTI", System.Data.DbType.Int32);
+                Utils.CrearParametre(consulta, parada.Nom, "NOM_TEXT", System.Data.DbType.String);
+                Utils.CrearParametre(consulta, parada.HoraPas, "HORAPAS_TEXT", System.Data.DbType.String);
+                Utils.CrearParametre(consulta, parada.Estacio.Id, "ESTACIO_TEXT", System.Data.DbType.Int32);
+                Utils.CrearParametre(consulta, ordreTemporal, "ORDRE_TEMPORAL", System.Data.DbType.Int32);
+                Utils.CrearParametre(consulta, parada.Trajecte.Id, "IDTRAJECTE_TEXT", System.Data.DbType.Int32);
+
+                consulta.ExecuteNonQuery();
             }
-            return mitjansTransport;
         }
 
-        public void eliminarParada(int posicio, int idTrajecte)
+        public void eliminarParada(int ordre, int idTrajecte)
         {
             var connexio = _connexio.Database.GetDbConnection();
 
@@ -63,15 +117,31 @@ namespace DAO
                 consulta.CommandText =
                     @"delete from parada
                         where
-                        ( :POSICIO_TEXT = posicio ) and
-                        ( :IDTRAJECTE_TEXT = IDTrajecte )";
+                        ( :ORDRE_TEXT = posicio ) and
+                        ( :IDTRAJECTE_TEXT = idTrajecte )";
 
-                Utils.CrearParametre(consulta, posicio, "POSICIO_TEXT", System.Data.DbType.Int32);
+                Utils.CrearParametre(consulta, ordre, "ORDRE_TEXT", System.Data.DbType.Int32);
                 Utils.CrearParametre(consulta, idTrajecte, "IDTRAJECTE_TEXT", System.Data.DbType.Int32);
 
-                consulta.ExecuteNonQuery();
-                // Fa falta comprovar que no hi hagin parades del mateix trajecte posteriors a la que volem eliminar
-                // En cas que si hi hagin, s'hauria de modificar les parades posteriors i posar-li l'ordre--
+                int q = consulta.ExecuteNonQuery();
+
+                // Comprovem que s'ha eliminat una parada
+                if (q > 0)
+                {
+                    consulta.Parameters.Clear();
+
+                    // Fem que les parades amb ordre posterior redueixin en 1 l'ordre
+                    consulta.CommandText =
+                        @"UPDATE parada
+                          SET ordre = ordre - 1
+                          WHERE idTrajecte = :IDTRAJECTE_TEXT
+                            AND ordre > :ORDRE_TEXT";
+
+                    Utils.CrearParametre(consulta, idTrajecte, "IDTRAJECTE_TEXT", System.Data.DbType.Int32);
+                    Utils.CrearParametre(consulta, ordre, "ORDRE_TEXT", System.Data.DbType.Int32);
+
+                    consulta.ExecuteNonQuery();
+                }
             }
         }
 
@@ -94,45 +164,45 @@ namespace DAO
                         p.nom,
                         p.horaPas,
 
-                        t.ID AS idTrajecte,
+                        t.id AS idTrajecte,
                         t.nom AS nomTrajecte,
                         t.dataCreacio,
                         t.validat,
 
-                        mt.ID AS idMitjaTransport,
+                        mt.id AS idMitjaTransport,
                         mt.nom AS nomMitjaTransport,
 
-                        u.ID AS idUsuari,
+                        u.id AS idUsuari,
                         u.email AS emailUsuari,
                         u.nom AS nomUsuari,
                         u.password AS passwordUsuari,
                         u.tipus AS tipusUsuari,
                         u.dataRegistre,
 
-                        e.ID AS idEstacio,
+                        e.id AS idEstacio,
                         e.nom AS nomEstacio,
                         e.latitud,
                         e.longitud,
 
-                        c.ID AS idCiutat,
+                        c.id AS idCiutat,
                         c.nom AS nomCiutat
 
                     FROM parada p
 
                     JOIN trajecte t
-                        ON t.ID = p.idTrajecte
+                        ON t.id = p.idTrajecte
 
                     JOIN mitja_transport mt
-                        ON mt.ID = t.mitjaTransport
+                        ON mt.id = t.mitjaTransport
 
                     JOIN usuari u
-                        ON u.ID = t.usuariCreador
+                        ON u.id = t.usuariCreador
 
                     JOIN estacio e
-                        ON e.ID = p.idEstacio
+                        ON e.id = p.idEstacio
 
                     JOIN ciutat c
-                        ON c.ID = e.IDCiutat
+                        ON c.id = e.IDCiutat
 
                     WHERE p.idTrajecte = :ID_TRAJECTE";
 
@@ -247,10 +317,9 @@ namespace DAO
             using (var consulta = connexio.CreateCommand())
             {
                 consulta.CommandText =
-                    @"insert into parada (ordre, idTrajecte, nom, horaPas, idEstacio)
-                        values (:ORDRE_TEXT, :IDT_TEXT, :NOM_TEXT, :HORAPAS_TEXT, :IDE_TEXT)";
+                    @"insert into parada (idTrajecte, nom, horaPas, idEstacio)
+                        values (:IDT_TEXT, :NOM_TEXT, :HORAPAS_TEXT, :IDE_TEXT)";
 
-                Utils.CrearParametre(consulta, parada.Ordre, "ORDRE_TEXT", System.Data.DbType.Int32);
                 Utils.CrearParametre(consulta, parada.Trajecte.Id, "IDT_TEXT", System.Data.DbType.Int32);
                 Utils.CrearParametre(consulta, parada.Nom, "NOM_TEXT", System.Data.DbType.String);
                 Utils.CrearParametre(consulta, parada.HoraPas, "HORAPAS_TEXT", System.Data.DbType.String);

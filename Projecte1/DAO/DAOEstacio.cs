@@ -36,7 +36,7 @@ namespace DAO
                         inner join ciutat c on c.id = e.IDCiutat
                                 where
                                 ( e.id = :ID_TEXT ) AND
-                                ( e.nom = :NOM_TEXT ) AND
+                                ( upper(e.nom) = :NOM_TEXT ) AND
                                 ( c.id = :ID_C_TEXT )";
 
                 if (rows_per_page > 0)
@@ -45,7 +45,7 @@ namespace DAO
                 }
 
                 Utils.CrearParametre(consulta, estacio.Id, "ID_TEXT", System.Data.DbType.Int32);
-                Utils.CrearParametre(consulta, estacio.Nom, "NOM_TEXT", System.Data.DbType.String);
+                Utils.CrearParametre(consulta, estacio.Nom.ToUpper(), "NOM_TEXT", System.Data.DbType.String);
                 Utils.CrearParametre(consulta, estacio.Ciutat.Id, "ID_C_TEXT", System.Data.DbType.Int32);
 
                 consulta.Transaction = _connexio.Database.CurrentTransaction?.GetDbTransaction();
@@ -78,17 +78,17 @@ namespace DAO
             using (var consulta = connexio.CreateCommand())
             {
                 consulta.CommandText =
-                    @"select e.ID as idEstacio, e.nom as nomEstacio, e.latitud, e.longitud, c.id as idCiutat, c.nom as nomCiutat from estacio e
+                    @"select e.id as idEstacio, e.nom as nomEstacio, e.latitud, e.longitud, c.id as idCiutat, c.nom as nomCiutat from estacio e
                         inner join ciutat c on e.IDCiutat = c.ID
                             where
-                            ( nom = :NOM_TEXT )";
+                            ( upper(nom) = :NOM_TEXT )";
 
                 if (rows_per_page > 0)
                 {
                     consulta.CommandText += $" OFFSET {offset} ROWS FETCH NEXT {rows_per_page} ROWS ONLY";
                 }
 
-                Utils.CrearParametre(consulta, "%" + nom_filtre + "%", "NOM_TEXT", System.Data.DbType.String);
+                Utils.CrearParametre(consulta, "%" + nom_filtre.ToUpper() + "%", "NOM_TEXT", System.Data.DbType.String);
 
                 consulta.Transaction = _connexio.Database.CurrentTransaction?.GetDbTransaction();
 
@@ -129,10 +129,9 @@ namespace DAO
             using (var consulta = connexio.CreateCommand())
             {
                 consulta.CommandText =
-                    @"insert into estacio (ID, IDCiutat, nom, latitud, longitud)
-                        values (:ID_TEXT, :IDC_TEXT, :NOM_TEXT, :LATITUD_TEXT, :LONGITUD_TEXT)";
+                    @"insert into estacio (idCiutat, nom, latitud, longitud)
+                        values (:IDC_TEXT, :NOM_TEXT, :LATITUD_TEXT, :LONGITUD_TEXT)";
 
-                Utils.CrearParametre(consulta, estacio.Id, "ID_TEXT", System.Data.DbType.Int32);
                 Utils.CrearParametre(consulta, estacio.Ciutat.Id, "IDC_TEXT", System.Data.DbType.Int32);
                 Utils.CrearParametre(consulta, estacio.Nom, "NOM_TEXT", System.Data.DbType.String);
                 Utils.CrearParametre(consulta, estacio.Latitud, "LATITUD_TEXT", System.Data.DbType.Double);

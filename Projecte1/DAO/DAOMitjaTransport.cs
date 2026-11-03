@@ -40,7 +40,7 @@ namespace DAO
                 {
                     while (reader.Read())
                     {
-                        int id = reader.GetInt32(reader.GetOrdinal("ID"));
+                        int id = reader.GetInt32(reader.GetOrdinal("id"));
                         string nom = reader.GetString(reader.GetOrdinal("nom"));
 
                         MitjaTransport mt = new MitjaTransport(id, nom);

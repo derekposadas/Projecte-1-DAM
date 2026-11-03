@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Aplicacio.Pagines;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -8,13 +9,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Wpf.Ui.Controls;
 
 namespace Aplicacio
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : FluentWindow
     {
         public MainWindow()
         {
@@ -27,7 +29,8 @@ namespace Aplicacio
             url = propietatsOracle.Default.url;
             usr = propietatsOracle.Default.usr;
             pwd = propietatsOracle.Default.pwd;
-            
+
+            RootNavigation.Navigate(typeof(Consultors));
         }
     }
 }

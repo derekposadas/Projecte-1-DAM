@@ -16,6 +16,17 @@ namespace Model.model
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
+        // Constructor per trajectes nous
+        public Trajecte(string nom, DateTime dataCreacio, bool validat, MitjaTransport mitjaTransport, Usuari usuariCreador)
+        {
+            Nom = nom;
+            DataCreacio = dataCreacio;
+            Validat = validat;
+            MitjaTransport = mitjaTransport;
+            UsuariCreador = usuariCreador;
+        }
+
+        // Constructor per trajectes de la BD
         public Trajecte(int id, string nom, DateTime dataCreacio, bool validat, MitjaTransport mitjaTransport, Usuari usuariCreador)
         {
             Id = id;
@@ -27,12 +38,13 @@ namespace Model.model
         }
 
         #region propietats
-        public int Id { get => id; set => id = value; }
+        public int Id { get => id; private set => id = value; }
         public string Nom { get => nom; set => nom = value; }
-        public DateTime DataCreacio { get => dataCreacio; set => dataCreacio = value; }
+        public DateTime DataCreacio { get => dataCreacio; private set => dataCreacio = value; }
         public bool Validat { get => validat; set => validat = value; }
         public MitjaTransport MitjaTransport { get => mitjaTransport; set => mitjaTransport = value; }
         public Usuari UsuariCreador { get => usuariCreador; set => usuariCreador = value; }
+        #endregion
 
         public override bool Equals(object? obj)
         {
@@ -45,7 +57,7 @@ namespace Model.model
         {
             return HashCode.Combine(id, nom.ToUpper());
         }
-        #endregion
+        
 
         public override string ToString()
         {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Common;
 using System.Linq;
 using System.Text;
@@ -9,18 +10,18 @@ namespace DAO
 {
     internal class Utils
     {
-        public static void CrearParametre(
-            DbCommand consulta,
-            object value,
-            string name,
-            System.Data.DbType tipus
-        )
+        public static void CrearParametre(DbCommand query, object? value, string name, DbType type)
         {
-            DbParameter p = consulta.CreateParameter();
-            p.Value = value;
+            if (query is Oracle.ManagedDataAccess.Client.OracleCommand oracleCommand)
+            {
+                oracleCommand.BindByName = true;
+            }
+
+            DbParameter p = query.CreateParameter();
+            p.Value = value ?? DBNull.Value;
             p.ParameterName = name;
-            p.DbType = tipus;
-            consulta.Parameters.Add(p);
+            p.DbType = type;
+            query.Parameters.Add(p);
         }
     }
 }

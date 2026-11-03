@@ -39,14 +39,14 @@ namespace DAO
                 consulta.CommandText =
                     @"select * from ciutat
                                 where
-                                ( nom like :NOM_TEXT)";
+                                ( upper(nom) like :NOM_TEXT)";
 
                 if (rows_per_page > 0)
                 {
                     consulta.CommandText += $" OFFSET {offset} ROWS FETCH NEXT {rows_per_page} ROWS ONLY";
                 }
 
-                Utils.CrearParametre(consulta, "%" + nom_filtre + "%", "NOM_TEXT", System.Data.DbType.String);
+                Utils.CrearParametre(consulta, "%" + nom_filtre.ToUpper() + "%", "NOM_TEXT", System.Data.DbType.String);
 
                 consulta.Transaction = _connexio.Database.CurrentTransaction?.GetDbTransaction();
 
@@ -54,7 +54,7 @@ namespace DAO
                 {
                     while (reader.Read())
                     {
-                        int id = reader.GetInt32(reader.GetOrdinal("ID"));
+                        int id = reader.GetInt32(reader.GetOrdinal("id"));
                         string nom = reader.GetString(reader.GetOrdinal("nom"));
 
                         Ciutat c = new Ciutat(id, nom);

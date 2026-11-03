@@ -3,36 +3,64 @@
   "WorkspaceRootPath": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\dao\\daoparada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|solutionrelative:dao\\daoparada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\aplicacio\\pagines\\consultors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|solutionrelative:aplicacio\\pagines\\consultors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\dao\\daotrajecte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|solutionrelative:dao\\daotrajecte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\aplicacio\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|solutionrelative:aplicacio\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\aplicacio\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|solutionrelative:aplicacio\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\aplicacio\\pagines\\consultors.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|solutionrelative:aplicacio\\pagines\\consultors.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\aplicacio\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|solutionrelative:aplicacio\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\aplicacio\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|solutionrelative:aplicacio\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\aplicacio\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|solutionrelative:aplicacio\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\aplicacio\\finestres\\inicisessio.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|solutionrelative:aplicacio\\finestres\\inicisessio.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\aplicacio\\aplicacio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|solutionrelative:aplicacio\\aplicacio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4923625-668A-95CB-F92E-EAD08FFFA065}|Model\\Model.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\model\\model\\trajecte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4923625-668A-95CB-F92E-EAD08FFFA065}|Model\\Model.csproj|solutionrelative:model\\model\\trajecte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4923625-668A-95CB-F92E-EAD08FFFA065}|Model\\Model.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\model\\model\\usuari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4923625-668A-95CB-F92E-EAD08FFFA065}|Model\\Model.csproj|solutionrelative:model\\model\\usuari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\dao\\daoparada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|solutionrelative:dao\\daoparada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\dao\\oraclefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|solutionrelative:dao\\oraclefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4923625-668A-95CB-F92E-EAD08FFFA065}|Model\\Model.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\model\\model\\parada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4923625-668A-95CB-F92E-EAD08FFFA065}|Model\\Model.csproj|solutionrelative:model\\model\\parada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\dao\\connexiobd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|solutionrelative:dao\\connexiobd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56EF42EF-347F-8490-CC5D-66A8B5CB352F}|IDAO\\IDAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\idao\\idaoparada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56EF42EF-347F-8490-CC5D-66A8B5CB352F}|IDAO\\IDAO.csproj|solutionrelative:idao\\idaoparada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\dao\\daousuari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|solutionrelative:dao\\daousuari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\dao\\daotrajecte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|solutionrelative:dao\\daotrajecte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B032D792-93AD-43E0-895D-FB17F7515846}|TestProject\\TestProject.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\testproject\\testdaociutat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B032D792-93AD-43E0-895D-FB17F7515846}|TestProject\\TestProject.csproj|solutionrelative:testproject\\testdaociutat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\dao\\daomitjatransport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|solutionrelative:dao\\daomitjatransport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\dao\\daoestacio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,20 +71,72 @@
       "RelativeMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|solutionrelative:dao\\daociutat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\aplicacio\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|solutionrelative:aplicacio\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B4923625-668A-95CB-F92E-EAD08FFFA065}|Model\\Model.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\model\\model\\usuari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4923625-668A-95CB-F92E-EAD08FFFA065}|Model\\Model.csproj|solutionrelative:model\\model\\usuari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\dao\\daomitjatransport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|solutionrelative:dao\\daomitjatransport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4923625-668A-95CB-F92E-EAD08FFFA065}|Model\\Model.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\model\\model\\ciutat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4923625-668A-95CB-F92E-EAD08FFFA065}|Model\\Model.csproj|solutionrelative:model\\model\\ciutat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\aplicacio\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|solutionrelative:aplicacio\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4923625-668A-95CB-F92E-EAD08FFFA065}|Model\\Model.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\model\\model\\mitjatransport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4923625-668A-95CB-F92E-EAD08FFFA065}|Model\\Model.csproj|solutionrelative:model\\model\\mitjatransport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4923625-668A-95CB-F92E-EAD08FFFA065}|Model\\Model.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\model\\model\\estacio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4923625-668A-95CB-F92E-EAD08FFFA065}|Model\\Model.csproj|solutionrelative:model\\model\\estacio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4923625-668A-95CB-F92E-EAD08FFFA065}|Model\\Model.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\model\\model\\tipususuari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4923625-668A-95CB-F92E-EAD08FFFA065}|Model\\Model.csproj|solutionrelative:model\\model\\tipususuari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\dao\\daousuari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|solutionrelative:dao\\daousuari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56EF42EF-347F-8490-CC5D-66A8B5CB352F}|IDAO\\IDAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\idao\\idaousuari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56EF42EF-347F-8490-CC5D-66A8B5CB352F}|IDAO\\IDAO.csproj|solutionrelative:idao\\idaousuari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56EF42EF-347F-8490-CC5D-66A8B5CB352F}|IDAO\\IDAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\idao\\idaoestacio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56EF42EF-347F-8490-CC5D-66A8B5CB352F}|IDAO\\IDAO.csproj|solutionrelative:idao\\idaoestacio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\dao\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|solutionrelative:dao\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56EF42EF-347F-8490-CC5D-66A8B5CB352F}|IDAO\\IDAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\idao\\idaotrajecte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56EF42EF-347F-8490-CC5D-66A8B5CB352F}|IDAO\\IDAO.csproj|solutionrelative:idao\\idaotrajecte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56EF42EF-347F-8490-CC5D-66A8B5CB352F}|IDAO\\IDAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\idao\\idaomitjatransport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56EF42EF-347F-8490-CC5D-66A8B5CB352F}|IDAO\\IDAO.csproj|solutionrelative:idao\\idaomitjatransport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56EF42EF-347F-8490-CC5D-66A8B5CB352F}|IDAO\\IDAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\idao\\idaociutat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56EF42EF-347F-8490-CC5D-66A8B5CB352F}|IDAO\\IDAO.csproj|solutionrelative:idao\\idaociutat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\dao\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|solutionrelative:dao\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\dao\\oraclefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22DC0559-0F06-317A-1EC2-7B0FCCA23D80}|DAO\\DAO.csproj|solutionrelative:dao\\oraclefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B032D792-93AD-43E0-895D-FB17F7515846}|TestProject\\TestProject.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\testproject\\testdaociutat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B032D792-93AD-43E0-895D-FB17F7515846}|TestProject\\TestProject.csproj|solutionrelative:testproject\\testdaociutat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\aplicacio\\propietatsoracle.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
       "RelativeMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|solutionrelative:aplicacio\\propietatsoracle.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|e:\\dam2\\projecte intermodular\\projecte-1-dam\\projecte1\\aplicacio\\finestres\\inicisessio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A35872CF-06F4-9512-FA20-D8C5970EFE15}|Aplicacio\\Aplicacio.csproj|solutionrelative:aplicacio\\finestres\\inicisessio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,63 +146,408 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DAOParada.cs",
-              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOParada.cs",
-              "RelativeDocumentMoniker": "DAO\\DAOParada.cs",
-              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOParada.cs",
-              "RelativeToolTip": "DAO\\DAOParada.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAwwH4AAAA7AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "App.xaml",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\App.xaml",
+              "RelativeDocumentMoniker": "Aplicacio\\App.xaml",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\App.xaml",
+              "RelativeToolTip": "Aplicacio\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-03T14:35:22.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Aplicacio\\MainWindow.xaml",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\MainWindow.xaml",
+              "RelativeToolTip": "Aplicacio\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-22T14:39:21.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Aplicacio\\MainWindow.xaml.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Aplicacio\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-26T15:45:12.826Z",
+              "WhenOpened": "2026-10-22T14:18:03.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Consultors.xaml",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\Pagines\\Consultors.xaml",
+              "RelativeDocumentMoniker": "Aplicacio\\Pagines\\Consultors.xaml",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\Pagines\\Consultors.xaml",
+              "RelativeToolTip": "Aplicacio\\Pagines\\Consultors.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-03T15:04:22.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Styles.xaml",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\Styles\\Styles.xaml",
+              "RelativeDocumentMoniker": "Aplicacio\\Styles\\Styles.xaml",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\Styles\\Styles.xaml",
+              "RelativeToolTip": "Aplicacio\\Styles\\Styles.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-03T15:29:04.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IniciSessio.xaml.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\Finestres\\IniciSessio.xaml.cs",
+              "RelativeDocumentMoniker": "Aplicacio\\Finestres\\IniciSessio.xaml.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\Finestres\\IniciSessio.xaml.cs",
+              "RelativeToolTip": "Aplicacio\\Finestres\\IniciSessio.xaml.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T15:13:05.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Aplicacio\\App.xaml.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\App.xaml.cs",
+              "RelativeToolTip": "Aplicacio\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T14:38:03.365Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Usuari.cs",
-              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Model\\model\\Usuari.cs",
-              "RelativeDocumentMoniker": "Model\\model\\Usuari.cs",
-              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Model\\model\\Usuari.cs",
-              "RelativeToolTip": "Model\\model\\Usuari.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Consultors.xaml.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\Pagines\\Consultors.xaml.cs",
+              "RelativeDocumentMoniker": "Aplicacio\\Pagines\\Consultors.xaml.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\Pagines\\Consultors.xaml.cs",
+              "RelativeToolTip": "Aplicacio\\Pagines\\Consultors.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-26T15:40:01.182Z",
+              "WhenOpened": "2026-11-03T15:04:30.298Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
+              "Title": "IniciSessio.xaml",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\Finestres\\IniciSessio.xaml",
+              "RelativeDocumentMoniker": "Aplicacio\\Finestres\\IniciSessio.xaml",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\Finestres\\IniciSessio.xaml",
+              "RelativeToolTip": "Aplicacio\\Finestres\\IniciSessio.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-03T15:11:53.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Aplicacio",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\Aplicacio.csproj",
+              "RelativeDocumentMoniker": "Aplicacio\\Aplicacio.csproj",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\Aplicacio.csproj",
+              "RelativeToolTip": "Aplicacio\\Aplicacio.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-03T15:10:35.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Trajecte.cs",
               "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Model\\model\\Trajecte.cs",
               "RelativeDocumentMoniker": "Model\\model\\Trajecte.cs",
               "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Model\\model\\Trajecte.cs",
               "RelativeToolTip": "Model\\model\\Trajecte.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwCQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-26T15:33:51.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
+              "Title": "IDAOParada.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\IDAO\\IDAOParada.cs",
+              "RelativeDocumentMoniker": "IDAO\\IDAOParada.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\IDAO\\IDAOParada.cs",
+              "RelativeToolTip": "IDAO\\IDAOParada.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T15:35:41.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DAOParada.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOParada.cs",
+              "RelativeDocumentMoniker": "DAO\\DAOParada.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOParada.cs",
+              "RelativeToolTip": "DAO\\DAOParada.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAcwGkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T15:45:12.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DAOMitjaTransport.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOMitjaTransport.cs",
+              "RelativeDocumentMoniker": "DAO\\DAOMitjaTransport.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOMitjaTransport.cs",
+              "RelativeToolTip": "DAO\\DAOMitjaTransport.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAkwCoAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T14:33:51.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DAOEstacio.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOEstacio.cs",
+              "RelativeDocumentMoniker": "DAO\\DAOEstacio.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOEstacio.cs",
+              "RelativeToolTip": "DAO\\DAOEstacio.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAmwIQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T14:34:06.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DAOCiutat.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOCiutat.cs",
+              "RelativeDocumentMoniker": "DAO\\DAOCiutat.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOCiutat.cs",
+              "RelativeToolTip": "DAO\\DAOCiutat.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAqwDcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T14:39:29.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "DAOTrajecte.cs",
               "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOTrajecte.cs",
               "RelativeDocumentMoniker": "DAO\\DAOTrajecte.cs",
               "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOTrajecte.cs",
               "RelativeToolTip": "DAO\\DAOTrajecte.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAkwKUAAABeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwHwAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-26T14:14:53.095Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
+              "Title": "Parada.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Model\\model\\Parada.cs",
+              "RelativeDocumentMoniker": "Model\\model\\Parada.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Model\\model\\Parada.cs",
+              "RelativeToolTip": "Model\\model\\Parada.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T14:28:39.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Usuari.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Model\\model\\Usuari.cs",
+              "RelativeDocumentMoniker": "Model\\model\\Usuari.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Model\\model\\Usuari.cs",
+              "RelativeToolTip": "Model\\model\\Usuari.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T15:40:01.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Ciutat.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Model\\model\\Ciutat.cs",
+              "RelativeDocumentMoniker": "Model\\model\\Ciutat.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Model\\model\\Ciutat.cs",
+              "RelativeToolTip": "Model\\model\\Ciutat.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T14:27:46.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MitjaTransport.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Model\\model\\MitjaTransport.cs",
+              "RelativeDocumentMoniker": "Model\\model\\MitjaTransport.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Model\\model\\MitjaTransport.cs",
+              "RelativeToolTip": "Model\\model\\MitjaTransport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T14:28:33.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Estacio.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Model\\model\\Estacio.cs",
+              "RelativeDocumentMoniker": "Model\\model\\Estacio.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Model\\model\\Estacio.cs",
+              "RelativeToolTip": "Model\\model\\Estacio.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T14:28:10.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TipusUsuari.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Model\\model\\TipusUsuari.cs",
+              "RelativeDocumentMoniker": "Model\\model\\TipusUsuari.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Model\\model\\TipusUsuari.cs",
+              "RelativeToolTip": "Model\\model\\TipusUsuari.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T14:29:20.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DAOUsuari.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOUsuari.cs",
+              "RelativeDocumentMoniker": "DAO\\DAOUsuari.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOUsuari.cs",
+              "RelativeToolTip": "DAO\\DAOUsuari.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAIBJwM0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T14:41:52.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IDAOEstacio.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\IDAO\\IDAOEstacio.cs",
+              "RelativeDocumentMoniker": "IDAO\\IDAOEstacio.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\IDAO\\IDAOEstacio.cs",
+              "RelativeToolTip": "IDAO\\IDAOEstacio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T15:35:21.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IDAOUsuari.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\IDAO\\IDAOUsuari.cs",
+              "RelativeDocumentMoniker": "IDAO\\IDAOUsuari.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\IDAO\\IDAOUsuari.cs",
+              "RelativeToolTip": "IDAO\\IDAOUsuari.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T15:36:28.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Utils.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\Utils.cs",
+              "RelativeDocumentMoniker": "DAO\\Utils.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\Utils.cs",
+              "RelativeToolTip": "DAO\\Utils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T13:44:43.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IDAOTrajecte.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\IDAO\\IDAOTrajecte.cs",
+              "RelativeDocumentMoniker": "IDAO\\IDAOTrajecte.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\IDAO\\IDAOTrajecte.cs",
+              "RelativeToolTip": "IDAO\\IDAOTrajecte.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAArwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T14:51:13.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IDAOMitjaTransport.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\IDAO\\IDAOMitjaTransport.cs",
+              "RelativeDocumentMoniker": "IDAO\\IDAOMitjaTransport.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\IDAO\\IDAOMitjaTransport.cs",
+              "RelativeToolTip": "IDAO\\IDAOMitjaTransport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T15:35:33.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IDAOCiutat.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\IDAO\\IDAOCiutat.cs",
+              "RelativeDocumentMoniker": "IDAO\\IDAOCiutat.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\IDAO\\IDAOCiutat.cs",
+              "RelativeToolTip": "IDAO\\IDAOCiutat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T15:35:05.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "DAO\\UnitOfWork.cs",
+              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\UnitOfWork.cs",
+              "RelativeToolTip": "DAO\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T14:37:38.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "TestDAOCiutat.cs",
               "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\TestProject\\TestDAOCiutat.cs",
               "RelativeDocumentMoniker": "TestProject\\TestDAOCiutat.cs",
@@ -135,112 +560,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DAOUsuari.cs",
-              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOUsuari.cs",
-              "RelativeDocumentMoniker": "DAO\\DAOUsuari.cs",
-              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOUsuari.cs",
-              "RelativeToolTip": "DAO\\DAOUsuari.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAQwCQAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-22T14:41:52.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DAOEstacio.cs",
-              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOEstacio.cs",
-              "RelativeDocumentMoniker": "DAO\\DAOEstacio.cs",
-              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOEstacio.cs",
-              "RelativeToolTip": "DAO\\DAOEstacio.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAA7wIIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-22T14:34:06.221Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ConnexioBd.cs",
-              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\ConnexioBd.cs",
-              "RelativeDocumentMoniker": "DAO\\ConnexioBd.cs",
-              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\ConnexioBd.cs",
-              "RelativeToolTip": "DAO\\ConnexioBd.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-22T14:17:35.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 30,
               "Title": "OracleFactory.cs",
               "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\OracleFactory.cs",
               "RelativeDocumentMoniker": "DAO\\OracleFactory.cs",
               "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\OracleFactory.cs",
               "RelativeToolTip": "DAO\\OracleFactory.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-22T14:17:43.332Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Aplicacio\\MainWindow.xaml",
-              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\MainWindow.xaml",
-              "RelativeToolTip": "Aplicacio\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-22T14:39:21.615Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DAOCiutat.cs",
-              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOCiutat.cs",
-              "RelativeDocumentMoniker": "DAO\\DAOCiutat.cs",
-              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOCiutat.cs",
-              "RelativeToolTip": "DAO\\DAOCiutat.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwCkAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-22T14:39:29.854Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DAOMitjaTransport.cs",
-              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOMitjaTransport.cs",
-              "RelativeDocumentMoniker": "DAO\\DAOMitjaTransport.cs",
-              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\DAO\\DAOMitjaTransport.cs",
-              "RelativeToolTip": "DAO\\DAOMitjaTransport.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-22T14:33:51.655Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 32,
               "Title": "propietatsOracle.settings",
               "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\propietatsOracle.settings",
               "RelativeDocumentMoniker": "Aplicacio\\propietatsOracle.settings",
               "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\propietatsOracle.settings",
               "RelativeToolTip": "Aplicacio\\propietatsOracle.settings",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
-              "WhenOpened": "2026-10-22T14:29:36.077Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Aplicacio\\MainWindow.xaml.cs",
-              "ToolTip": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Aplicacio\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-22T14:18:03.05Z"
+              "WhenOpened": "2026-10-22T14:29:36.077Z",
+              "EditorCaption": ""
             }
           ]
         }

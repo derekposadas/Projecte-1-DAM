@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WPaUKBl8A5E=",
+  "dgSpecHash": "SXfOYrt7VCw=",
   "success": true,
   "projectFilePath": "E:\\DAM2\\Projecte Intermodular\\Projecte-1-DAM\\Projecte1\\Aplicacio\\Aplicacio.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,9 @@
     "C:\\Users\\Usuari\\.nuget\\packages\\oracle.entityframeworkcore\\10.23.26301\\oracle.entityframeworkcore.10.23.26301.nupkg.sha512",
     "C:\\Users\\Usuari\\.nuget\\packages\\oracle.manageddataaccess.core\\23.26.301\\oracle.manageddataaccess.core.23.26.301.nupkg.sha512",
     "C:\\Users\\Usuari\\.nuget\\packages\\propertychanged.fody\\4.1.0\\propertychanged.fody.4.1.0.nupkg.sha512",
-    "C:\\Users\\Usuari\\.nuget\\packages\\system.directoryservices.protocols\\8.0.2\\system.directoryservices.protocols.8.0.2.nupkg.sha512"
+    "C:\\Users\\Usuari\\.nuget\\packages\\system.directoryservices.protocols\\8.0.2\\system.directoryservices.protocols.8.0.2.nupkg.sha512",
+    "C:\\Users\\Usuari\\.nuget\\packages\\wpf-ui\\4.3.0\\wpf-ui.4.3.0.nupkg.sha512",
+    "C:\\Users\\Usuari\\.nuget\\packages\\wpf-ui.abstractions\\4.3.0\\wpf-ui.abstractions.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

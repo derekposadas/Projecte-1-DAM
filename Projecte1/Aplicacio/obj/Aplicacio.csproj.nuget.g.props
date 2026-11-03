@@ -17,4 +17,7 @@
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\10.0.13\buildTransitive\net10.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\10.0.13\buildTransitive\net10.0\Microsoft.EntityFrameworkCore.props')" />
   </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgWPF-UI Condition=" '$(PkgWPF-UI)' == '' ">C:\Users\Usuari\.nuget\packages\wpf-ui\4.3.0</PkgWPF-UI>
+  </PropertyGroup>
 </Project>

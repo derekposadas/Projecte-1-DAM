@@ -1,0 +1,16 @@
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\IDAO\bin\Debug\net10.0\IDAO.deps.json
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\IDAO\bin\Debug\net10.0\IDAO.dll
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\IDAO\bin\Debug\net10.0\IDAO.pdb
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\IDAO\bin\Debug\net10.0\Model.dll
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\IDAO\bin\Debug\net10.0\Model.pdb
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\IDAO\obj\Debug\net10.0\IDAO.csproj.AssemblyReference.cache
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\IDAO\obj\Debug\net10.0\IDAO.GeneratedMSBuildEditorConfig.editorconfig
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\IDAO\obj\Debug\net10.0\IDAO.AssemblyInfoInputs.cache
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\IDAO\obj\Debug\net10.0\IDAO.AssemblyInfo.cs
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\IDAO\obj\Debug\net10.0\IDAO.csproj.CoreCompileInputs.cache
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\IDAO\obj\Debug\net10.0\IDAO.sourcelink.json
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\IDAO\obj\Debug\net10.0\IDAO.csproj.Up2Date
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\IDAO\obj\Debug\net10.0\IDAO.dll
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\IDAO\obj\Debug\net10.0\refint\IDAO.dll
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\IDAO\obj\Debug\net10.0\IDAO.pdb
+E:\DAM2\Projecte Intermodular\Projecte-1-DAM\Projecte1\IDAO\obj\Debug\net10.0\ref\IDAO.dll

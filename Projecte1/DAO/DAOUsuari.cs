@@ -23,6 +23,7 @@ namespace DAO
             if (user.Tipus.Equals(TipusUsuari.BLOQUEJAT) || user.Tipus.Equals(TipusUsuari.ADMINISTRADOR)) return;
 
             user.Tipus = TipusUsuari.BLOQUEJAT;
+            editarUsuari(user);
         }
 
         public void desbloquejaUsuari(Usuari user)
@@ -30,6 +31,7 @@ namespace DAO
             if (user.Tipus.Equals(TipusUsuari.EDITOR) || user.Tipus.Equals(TipusUsuari.ADMINISTRADOR)) return;
 
             user.Tipus = TipusUsuari.EDITOR;
+            editarUsuari(user);
         }
 
         public ObservableCollection<Usuari> GetUsuaris()
@@ -68,7 +70,7 @@ namespace DAO
                 {
                     while (reader.Read())
                     {
-                        int id = reader.GetInt32(reader.GetOrdinal("ID"));
+                        int id = reader.GetInt32(reader.GetOrdinal("id"));
                         string? nom;
                         if (!reader.IsDBNull(reader.GetOrdinal("nom")))
                         {
@@ -170,6 +172,38 @@ namespace DAO
                 {
                     return false;
                 }
+            }
+        }
+
+        public void editarUsuari(Usuari user)
+        {
+            var connexio = _connexio.Database.GetDbConnection();
+
+            if (connexio.State == System.Data.ConnectionState.Closed)
+            {
+                connexio.Open();
+            }
+
+            using (var consulta = connexio.CreateCommand())
+            {
+                consulta.CommandText =
+                    @"update usuari set
+                        email = :EMAIL_TEXT,
+                        nom = :NOM_TEXT,
+                        password = :PASSWORD_TEXT,
+                        tipus = :TIPUS_TEXT
+                            where id = :ID_TEXT";
+
+                Utils.CrearParametre(consulta, user.Email, "EMAIL_TEXT", System.Data.DbType.String);
+                Utils.CrearParametre(consulta, user.Nom, "NOM_TEXT", System.Data.DbType.String);
+                Utils.CrearParametre(consulta, user.Password, "PASSWORD_TEXT", System.Data.DbType.String);
+                string tipus = "E";
+                if (user.Tipus == TipusUsuari.BLOQUEJAT) tipus = "B";
+
+                Utils.CrearParametre(consulta, tipus, "TIPUS_TEXT", System.Data.DbType.String);
+                Utils.CrearParametre(consulta, user.Id, "ID_TEXT", System.Data.DbType.Int32);
+
+                consulta.ExecuteNonQuery();
             }
         }
     }
