@@ -5,7 +5,25 @@
     <Compile Update="Finestres\IniciSessio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Finestres\Registre.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pagines\Administradors-Trajectes.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pagines\Administradors-Usuaris.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pagines\Administradors.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pagines\Consultors.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pagines\EditarTrajecte.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pagines\Editors.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

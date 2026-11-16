@@ -1,0 +1,84 @@
+﻿<Window x:Class="Aplicacio.Finestres.Registre"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        xmlns:pages="clr-namespace:Aplicacio.Pagines"
+        xmlns:windows="clr-namespace:Aplicacio.Finestres"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aplicacio.Finestres"
+        mc:Ignorable="d"
+        Title="Registre" Height="369" Width="673">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <ui:NavigationView x:Name="RootNavigation" 
+           PaneDisplayMode="Top"  OpenPaneLength="220"
+            IsBackButtonVisible="Collapsed" FrameMargin="0" Grid.Row="0">
+            <ui:NavigationView.MenuItems>
+                <ui:NavigationViewItem TargetPageType="{x:Type pages:Consultors}" NavigationCacheMode="Enabled">
+                    <ui:NavigationViewItem.Icon>
+                        <ui:SymbolIcon Symbol="Home16" FontSize="18"></ui:SymbolIcon>
+                    </ui:NavigationViewItem.Icon>
+                </ui:NavigationViewItem>
+
+            </ui:NavigationView.MenuItems>
+
+            <ui:NavigationView.FooterMenuItems>
+                <ui:NavigationViewItem TargetPageType="{x:Type windows:IniciSessio}">
+                    <ui:NavigationViewItem.Icon>
+                        <ui:SymbolIcon Symbol="Person12" FontSize="18"></ui:SymbolIcon>
+                    </ui:NavigationViewItem.Icon>
+                </ui:NavigationViewItem>
+            </ui:NavigationView.FooterMenuItems>
+        </ui:NavigationView>
+
+        <StackPanel Margin="32, 16" Grid.Row="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.7*"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Label Content="Usuari"
+                       FontWeight="SemiBold" FontSize="20" HorizontalAlignment="Right" Margin="10"
+                       Grid.Column="0" Grid.Row="0"/>
+                <TextBox x:Name="txbUsuari" Width="300" HorizontalAlignment="Left"
+                         Grid.Column="1" Grid.Row="0"/>
+
+                <Label Content="Email"
+                       FontWeight="SemiBold" FontSize="20" HorizontalAlignment="Right" Margin="10"
+                       Grid.Column="0" Grid.Row="1"/>
+                <TextBox x:Name="txbEmail" Width="300" HorizontalAlignment="Left"
+                        Grid.Column="1" Grid.Row="1"/>
+
+                <Label Content="Contrasenya"
+                       FontWeight="SemiBold" FontSize="20" HorizontalAlignment="Right" Margin="10"
+                       Grid.Column="0" Grid.Row="2"/>
+                <TextBox x:Name="txbContrasenya" Width="300" HorizontalAlignment="Left"
+                        Grid.Column="1" Grid.Row="2"/>
+
+                <Label Content="Confirmar contrasenya"
+                       FontWeight="SemiBold" FontSize="20" HorizontalAlignment="Right" Margin="10"
+                       Grid.Column="0" Grid.Row="3"/>
+                <TextBox x:Name="txbConfirmarContrasenya" Width="300" HorizontalAlignment="Left"
+                        Grid.Column="1" Grid.Row="3"/>
+            </Grid>
+
+            <Label Content="Dades incorrectes, torna a provar"
+                   Foreground="Red" FontWeight="SemiBold" HorizontalAlignment="Center"
+                   Visibility="Hidden"/>
+            <Button Content="Registrar-se"
+                    Background="Yellow" BorderBrush="Black" HorizontalAlignment="Center"
+                    x:Name="btnRegistrarse" Click="btnRegistrarse_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

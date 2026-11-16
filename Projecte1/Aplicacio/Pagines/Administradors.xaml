@@ -1,0 +1,28 @@
+﻿<Page x:Class="Aplicacio.Pagines.Administradors"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      xmlns:pages="clr-namespace:Aplicacio.Pagines"
+      xmlns:windows="clr-namespace:Aplicacio.Finestres"
+      xmlns:local="clr-namespace:Aplicacio.Pagines"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Administradors"
+      Loaded="Page_Loaded">
+
+    <Grid VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+            
+        <Button Content="Trajectes" Grid.Column="0"
+                HorizontalAlignment="Center" FontSize="20" FontWeight="SemiBold"
+                x:Name="btnTrajectes" Click="btnTrajectes_Click"/>
+        <Button Content="Usuaris" Grid.Column="1"
+                HorizontalAlignment="Center" FontSize="20" FontWeight="SemiBold"
+                x:Name="btnUsuaris" Click="btnUsuaris_Click"/>
+    </Grid>
+</Page>

@@ -26,5 +26,15 @@ namespace Aplicacio.Finestres
         {
 
         }
+
+        private void btnRegistrat_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnIniciaSessio_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

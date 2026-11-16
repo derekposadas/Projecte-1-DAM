@@ -9,6 +9,7 @@ namespace DAO
     public class UnitOfWork : IDisposable
     {
         private readonly ConnexioBd _connexio;
+        private bool disposed;
 
         public IDAOCiutat DAOCiutats { get; }
         public IDAOEstacio DAOEstacions { get; }
@@ -31,6 +32,13 @@ namespace DAO
         public void beginTransaction() => _connexio.Database.BeginTransaction();
         public void Commit() => _connexio.Database.CurrentTransaction?.Commit();
         public void Rollback() => _connexio.Database.CurrentTransaction?.Rollback();
-        public void Dispose() => _connexio.Dispose();
+        public void Dispose()
+        {
+            if (disposed)
+                return;
+
+            _connexio.Database.CurrentTransaction?.Dispose();
+            disposed = true;
+        }
     }
 }

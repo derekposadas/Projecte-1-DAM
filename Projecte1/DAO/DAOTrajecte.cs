@@ -111,10 +111,11 @@ namespace DAO
                             ON eDesti.id = pDesti.idEstacio
                         JOIN ciutat cDesti
                             ON cDesti.id = eDesti.idCiutat
-                        WHERE ((cOrigen.nom) LIKE :ORIGEN_TEXT OR :ORIGEN_TEXT = '%')
+                        WHERE (upper(cOrigen.nom) LIKE :ORIGEN_TEXT OR :ORIGEN_TEXT = '%')
                         AND (upper(cDesti.nom) LIKE :DESTI_TEXT OR :DESTI_TEXT = '%')
-                        AND pOrigen.horaPas = :HORAPAS_TEXT
-                        AND pOrigen.ordre < pDesti.ordre";
+                        AND (pOrigen.horaPas = :HORAPAS_TEXT OR :HORAPAS_TEXT = '%')
+                        AND pOrigen.ordre < pDesti.ordre
+                        AND t.validat = 1";
 
                 if (rows_per_page > 0)
                 {
@@ -123,10 +124,11 @@ namespace DAO
 
                 string ciutatOrigen = origen == null ? "%"  : "%" + origen.Nom.ToUpper() + "%";
                 string ciutatDesti = desti == null ? "%" : "%" + desti.Nom.ToUpper() + "%";
+                string horaDePas = horaPas == "" ? "%" : horaPas;
 
                 Utils.CrearParametre(consulta, ciutatOrigen, "ORIGEN_TEXT", System.Data.DbType.String);
                 Utils.CrearParametre(consulta, ciutatDesti, "DESTI_TEXT", System.Data.DbType.String);
-                Utils.CrearParametre( consulta, horaPas, "HORAPAS_TEXT", System.Data.DbType.String);
+                Utils.CrearParametre( consulta, horaDePas, "HORAPAS_TEXT", System.Data.DbType.String);
 
                 consulta.Transaction = _connexio.Database.CurrentTransaction?.GetDbTransaction();
 

@@ -28,31 +28,59 @@
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 
-                <Label Content="Origen: " Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right"/>
+                <Label Content="Origen: " Grid.Column="0" Grid.Row="0" 
+                       HorizontalAlignment="Right" VerticalAlignment="Center"
+                       />
                 <TextBox x:Name="txbOrigen" Grid.Column="1" Grid.Row="0"
-                         Width="160" HorizontalAlignment="Left" Margin="10,0,0,0"
+                         Width="160" HorizontalAlignment="Left" Margin="10"
+                         TextChanged="txb_TextChanged"
                          />
+                <Popup x:Name="popupOrigen"
+                       PlacementTarget="{Binding ElementName=txtOrigen}"
+                       Placement="Bottom"
+                       StaysOpen="False"
+                       AllowsTransparency="True">
 
-                <Label Content="Destí: " Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right"/>
+                    <Border Background="White"
+                            BorderBrush="#CCCCCC"
+                            BorderThickness="1"
+                            Width="{Binding ActualWidth, ElementName=txtOrigen}"
+                            MaxHeight="150">
+
+                        <ListBox x:Name="lstOrigen"
+                             SelectionChanged="lstOrigen_SelectionChanged"
+                             BorderThickness="0"
+                             DisplayMemberPath="Nom"/>
+                    </Border>
+                </Popup>
+
+                <Label Content="Destí: " Grid.Row="1" Grid.Column="0" 
+                       HorizontalAlignment="Right" VerticalAlignment="Center"/>
                 <TextBox x:Name="txbDesti" Grid.Row="1" Grid.Column="1"
-                         Width="160" HorizontalAlignment="Left" Margin="10,0,0,0"
+                         Width="160" HorizontalAlignment="Left" Margin="10"
+                         TextChanged="txb_TextChanged"
                              />
             </Grid>
-            <StackPanel Grid.Column="0" Margin="10">
-                <StackPanel Orientation="Horizontal" Margin="5">
-                    
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="5">
-                </StackPanel>
-            </StackPanel>
 
-            <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Label Content="Hora sortida:" />
-                <TextBox x:Name="txbHoraSortida"
-                         Width="200"/>
+            <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Hora sortida:" />
+                    <TextBox x:Name="txbHoraSortida"
+                         Width="200"
+                         TextChanged="txb_TextChanged"/>
+                </StackPanel>
             </StackPanel>
         </Grid>
 
-        <Label Content="Resultats" FontSize="28" FontWeight="SemiBold" Margin="0,30,0,0"/>
+        <GroupBox Header="Resultats" FontSize="26" Margin="10">
+            <ListView x:Name="lsvTrajectes">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </GroupBox>
+        
     </StackPanel>
 </Page>

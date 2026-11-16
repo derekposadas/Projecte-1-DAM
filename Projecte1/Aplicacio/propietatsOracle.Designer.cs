@@ -25,37 +25,13 @@ namespace Aplicacio {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://10.2.51.67:1521/XEPDB1")]
-        public string url {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=10.2.51.67:1521/XEPDB1;User Id=alumne;Password=alumne;")]
+        public string ConnexióOracle {
             get {
-                return ((string)(this["url"]));
+                return ((string)(this["ConnexióOracle"]));
             }
             set {
-                this["url"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("alumne")]
-        public string usr {
-            get {
-                return ((string)(this["usr"]));
-            }
-            set {
-                this["usr"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("alumne")]
-        public string pwd {
-            get {
-                return ((string)(this["pwd"]));
-            }
-            set {
-                this["pwd"] = value;
+                this["ConnexióOracle"] = value;
             }
         }
     }

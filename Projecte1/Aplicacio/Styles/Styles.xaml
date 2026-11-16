@@ -3,5 +3,6 @@
 
     <Style TargetType="TextBox">
         <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="Height" Value="25"/>
     </Style>
 </ResourceDictionary>
